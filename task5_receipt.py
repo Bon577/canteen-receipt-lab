@@ -34,3 +34,6 @@ customer_type = input()
 payment = float(input())
 
 # TODO: write your code below
+full_name = first_name + " " + last_name
+print(f"Customer: {full_name.title()}")
+
