@@ -30,7 +30,6 @@ payment = float(input())
 
 # TODO: write your code below
 cleaned_type = customer_type.strip().lower()
-
 if cleaned_type == "student":
     pct_discount = 0.10 * subtotal
 elif cleaned_type in ("senior", "pwd"):
@@ -42,7 +41,7 @@ extra_discount = 25.0 if subtotal >= 500 else 0.0
 
 discount = round(pct_discount + extra_discount, 2)
 payable = round(subtotal - discount, 2)
-
+ 
 if payment >= payable:
     status = "Payment OK"
 else:
